@@ -1,93 +1,107 @@
 /* mixins */
 :root {
-    --text-color: #212121;
-    --title-color: #757575;
-    --accent-color: #2196f3;
-    --white-color: #ffffff;
-    --background-dark-color: rgba(47, 48, 58, 0.8);
-    --dark-grey-bg-color: #2f303a;
-    --logo-dark-color: #000000;
-    --team-bg-color: #F5F4FA
+  --text-color: #212121;
+  --light-grey-color: #757575;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --background-dark-color: rgba(47, 48, 58, 0.8);
+  --dark-grey-bg-color: #2f303a;
+  --logo-dark-color: #000000;
+  --team-bg-color: #f5f4fa;
 }
 
-* {
-    padding: 0;
-    margin: 0;
+*,
+h1 {
+  padding: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 address {
-    font-style: normal;
+  font-style: normal;
+}
+
+header {
+  border-bottom: 1px solid var(--light-grey-color);
 }
 
 .team-list h3,
 .header-logo,
-.logo-span {
-    text-transform: capitalize;
-    color: black;
+.logo-span,
+.portfolio-links,
+.portfolio-items li p {
+  text-transform: capitalize;
+  color: black;
 }
 
-
 .logo-span {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .nav-list li a {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .nav-list li a:hover,
+.nav-list li a:focus,
+.nav-list li a:active,
 .header-contacts-list a:hover,
-.footer-contacts a:hover {
-    color: var(--accent-color);
+.header-contacts-list a:focus,
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  color: var(--accent-color);
+}
+
+.nav-list li a:visited {
+  background: green;
 }
 
 /*  */
 .s1-title,
 .s2 h3 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .header-contacts-list a,
 .s2-list li p,
 .team-list li p,
-.footer-contacts a {
-    color: var(--title-color);
+.footer-contacts a,
+.portfolio-items li p {
+  color: var(--light-grey-color);
 }
 
 /* SECTION 1 */
 .s1 {
-    background: var(--dark-grey-bg-color);
+  background: var(--dark-grey-bg-color);
 }
 
-.s1-title,
-.s1 a {
-    color: white;
-}
-
-.s1 a {
-    background: var(--accent-color);
+.s1 a,
+.portfolio-links a {
+  background: var(--accent-color);
 }
 
 /* SECTION 2 */
 .team {
-    background: var(--team-bg-color);
+  background: var(--team-bg-color);
 }
 
 .footer {
-    background: var(--dark-grey-bg-color);
+  background: var(--dark-grey-bg-color);
 }
 
-
+/* SECTION 2 */
+.s1-title,
+.s1 a,
 .footer-logo,
-.footer-address {
-    color: white;
+.footer-address,
+.portfolio-links a {
+  color: white;
 }
